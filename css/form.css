@@ -1,0 +1,77 @@
+#payment-form {
+    padding: 30px;
+    background: var(--dark-color);
+    position: relative;
+    z-index: 9;
+    width: 750px;
+    display: inline-block;
+    text-align: left;
+}
+
+#payment-form h4 {
+    border-bottom: 1px solid var(--black-color);
+    position: relative;
+    margin: 0px 0 20px 0;
+    padding: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+#payment-form h4:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    display: inline-block;
+    width: 100px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+form#payment-form.require-validation ul.pms-form-fields-wrapper li label {
+    margin: 0;
+    font-family: var(--title-fonts);
+    color: var(--white-color);
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 18px;
+}
+
+form#payment-form.require-validation ul.pms-form-fields-wrapper li {
+    display: inline-block;
+    width: 48%;
+    float: left;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+form#payment-form.require-validation ul.pms-form-fields-wrapper li:nth-child(even) {
+    float: right;
+}
+
+form#payment-form.require-validation ul.pms-form-fields-wrapper li.pms-field.pms-field-subscriptions {
+    width: 100%;
+}
+
+#payment-form .pms-subscription-plan {
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+#payment-form {
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+#payment-form label input.pms_pay_gate {
+    margin-left: 15px;
+}
+
+.pms_field-errors-wrapper {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.pms_field-errors-wrapper p {
+    margin: 0;
+}
